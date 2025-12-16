@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+
+    /* ===== HEADER INSTITUCIONAL ===== */
+    .site-header {
+      background-color: #593493;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      padding: 0 10vh;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-logo {
+      height: 55px;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .institution-name {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .institution-slogan {
+      color: #e0d6f2;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    /* ===== CONTEÚDO PRINCIPAL ===== */
+    .Principal {
+      display: flex;
+      align-items: center;
+      padding: 40px 10vh;
+      gap: 40px;
+      margin: 80px 0;
+    }
+
+    .texto {
+      width: 50%;
+    }
+
+    .texto p {
+      font-size: 21px;
+      line-height: 1.7;
+      font-weight: 400;
+      max-width: 65ch;
+      text-align: justify;
+    }
+
+    .Img {
+      width: 50%;
+    }
+
+    .Img img {
+      width: 100%;
+      height: auto;
+      border-radius: 13px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+    }
+
+    /* ===== BOTÃO CTA ===== */
+    .cta-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0 80px 0;
+    }
+
+    .cta-button {
+      background-color: #593493;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 16px 32px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #6a3fb5;
+      transform: scale(1.07);
+      box-shadow:
+        0 0 10px rgba(89, 52, 147, 0.6),
+        0 0 25px rgba(89, 52, 147, 0.5),
+        0 0 45px rgba(89, 52, 147, 0.4);
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      width: 100%;
+      background-color: #0f0f0f;
+    }
+
+    .site-footer img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-content">
+      <img
+        src="imgs/logo2.svg"
+        alt="Proz Educação"
+        class="header-logo"
+      >
+
+      <div class="header-text">
+        <span class="institution-name">Proz Educação</span>
+        <span class="institution-slogan">
+          Ensino Técnico e Profissionalizante
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <section class="Principal">
+    <div class="texto">
+      <p>
+        A Proz parabeniza todos os alunos que já concluíram seu curso técnico em nossa instituição.
+        Desejamos muito sucesso nessa nova etapa, com conquistas, crescimento profissional e
+        realização dos seus objetivos. Informamos também que, ao realizar o questionário de
+        satisfação, será acrescentado 1 ponto para cada módulo do curso, como forma de reconhecimento
+        pela sua participação e contribuição com a melhoria contínua da nossa instituição.
+      </p>
+    </div>
+
+    <div class="Img">
+      <img src="imgs/IMG1.avif" alt="">
+    </div>
+  </section>
+
+  <!-- BOTÃO -->
+  <div class="cta-container">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfMBn5XWLiggfwilabopGdK6FTXZggsIL77yCPwr6-2uTnBKg/viewform?usp=dialog"
+      target="_blank"
+      class="cta-button"
+    >
+      Responder Questionário de Satisfação 😄
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <img src="imgs/footer.png" alt="Rodapé Proz">
+  </footer>
+
+</body>
+</html>
